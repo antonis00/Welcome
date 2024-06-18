@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome to Our Home</title>
+<style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; }
+    .container { margin: 20px; }
+    button { background-color: #368eeb; color: white; border: none; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer; border-radius: 8px; }
+    .content { padding: 0 18px; display: none; overflow: hidden; background-color: #f9f9f9; }
+    .main_button { background-color: #26ae36; }
+</style>
+</head>
+<body>
+
+<h2>Welcome to Heraklion!</h2>
+<p>Dear Monique and Manolis, we are delighted to welcome you to our home and hope that you will enjoy your stay! We truly want you to feel as comfortable as you would in your own home. To help you achieve this, we have created this guide to help you get acquainted with our home and the area. Please reach out via phone or email if you need anything.</p>
+<p></p>
+
+<div class="container">
+    <button onclick="toggleVisibility('contact')">Contact Information</button>
+    <div id="contact" class="content">
+        <p><strong>Your Name:</strong> Antonios Patergianakis</p>
+        <p><strong>Mobile Number:</strong> +30 6955354545</p>
+        <p><strong>Email:</strong> antonisp03@gmail.com</p>
+        <p><strong>Emergency Contact:</strong> Sofia Melissourgaki - +30 6972008543 - sophiamls@gmail.com </p>
+        <p><strong>Neighbor Contact:</strong> Manolis Patergianakis - +30 6948491620</p>
+    </div>
+
+    <button onclick="toggleVisibility('address')">Address and Important Details</button>
+    <div id="address" class="content">
+        <p><strong>Home Address:</strong> Kiriakou Skepetzi 1, 71409, Heraklion <a href="https://maps.app.goo.gl/BjCh2wLZyDzWsfu49" target="_blank">Open Map</a></p>
+        <p><strong>Wi-Fi:</strong> Network Name (SSID): Home Sweet Home, Password: Patergianakis357***</p>
+        <p><strong>Keys:</strong> My parents who live on the ground floor will have the keys to the house. See "Neighbor Contact" above</p>
+    </div>
+
+    <button onclick="toggleVisibility('rules')">House Rules</button>
+    <div id="rules" class="content">
+        <p><strong>Smoking:</strong> No smoking is allowed inside the house</p>
+        <p><strong>Pets:</strong> No pets currently</p>
+        <p><strong>Noise:</strong> Please respect the people living next to and below you.</p>
+        <p><strong>Garbage Disposal:</strong> There is a garbage bin under the kitchen sink and a recycling bin next to it (by the balcony door). When they are full please take the trash to the respective public bins on the street behind the house <a href="https://maps.app.goo.gl/RcCet7VpHgjR7aYh7" target="_blank"> Open Map</a>. Blue bins are for recycling and the others for regular trash. Garbage disposal tracks go by every night and pick them up from there.</p>
+    </div>
+
+    <button onclick="toggleVisibility('kitchen')">Kitchen</button>
+    <div id="kitchen" class="content">
+        <p>Please feel free to use any of the food/drinks in the refrigerator or in the cabinets</p>
+        <p><strong>Water:</strong> The tap water is NOT potable. We buy bottles of water from the super market. Tap water can be used for cooking</p>
+        <p><strong>Cooking:</strong> We mainly use the airfryer, but there is also an electric kitchen, a steam cooker and everything you need from pots and pans and utensils in the cupboards</p>
+        <p><strong>Garbage Bags:</strong> Located in the rightmost cupboard, when facing the sink</p>
+        <p><strong>Dishwasher:</strong> There is a dishwasher for the dishes, the tablets are on the upper right corner cupboard.</p>
+    </div>
+
+    <button onclick="toggleVisibility('bedroom')">Bedroom</button>
+    <div id="bedroom" class="content">
+        <p><strong>Bed Linens:</strong> Bed linens and towels are located in the drawers under the bed</p>
+        <p><strong>TV:</strong> There is a TV in the bedroom. We do not watch Netflix but you can use your own account if you want</p>
+        <p><strong>Security:</strong> We usually sleep with all windows and doors open in the summer. There is no safety issue. Of course you can do as you feel.</p>
+        <p><strong>Temperature:</strong> If it is too hot, there is a portable fan in the house that we use</p>
+    </div>
+
+    <button onclick="toggleVisibility('kidsbedroom')">Kid's Bedroom</button>
+    <div id="kidsbedroom" class="content">
+        <p>This is out daughter's bedroom with one smaller bed (200 * 110). Ideal if you have kids or need a second bed. You can use the toys if you have children with you.</p>
+        <p><strong>Bed Linens:</strong> Bed linens located in the drawers under the bed and towels in the closet</p>
+    </div>
+
+    <button onclick="toggleVisibility('livingroom')">Living Room</button>
+    <div id="livingroom" class="content">
+        <p><strong>Books:</strong> There is a bookcase with books. Most of them in Greek, but some in English, Spanish and French. You are welcome to read them.</p>
+        <p><strong>Air Conditioning:</strong> There an AC unit in the living but we use only during excessive heat. Usually the house is comfortable just by opening all doors. The remote is on the bookcase. Quite a new development, the on/off button needs high pressure to work, fyi in case we do not have the time to get a new one until you come.</p>
+    </div>
+
+    <button onclick="toggleVisibility('bathroom')">Bathroom</button>
+    <div id="bathroom" class="content">
+        <p><strong>Hot Water:</strong> In the summer there is always hot water from the sun. In the winter you can turn on the boiler from the electric board (marked with a letter Θ)</p>
+        <p><strong>Consumables:</strong> You will find shampoo and bubble bath in the bathroom sink cupboards. And small bags for the bin as well.</a></p>
+        <p><strong>Washing Machine:</strong> In the bathroom there is also a washing machine. The detergents are above it on the cupboard. Sometimes the door need an upward push to close for the washing machine to start. We don't have a dryer, it is not needed in Crete. </p>
+    </div>
+    
+    <button onclick="toggleVisibility('office')">Office</button>
+    <div id="office" class="content">
+        <p>There is a small room that we use as an office. It has equipemnt for connecting you laptop, in case you need to work while you are here.</p>
+    </div>
+
+    <button onclick="toggleVisibility('balcony')">Balcony</button>
+    <div id="balcony" class="content">
+        <p>We strongly advise you to take care of the balcony. We usually sit there in the evening, just when the sun sets, until late at night. You can eat and drink there if you prefer.</p>
+    </div>
+    
+    <button onclick="toggleVisibility('sights')">Heraklion Sights</button>
+    <div id="sights" class="content">
+        <p><strong>Morosini Fountain:</strong> The Morosini fountain, or Lion fountain, is in the main square of Heraklion. It was built during the Venetian rule of Crete. <a href="https://maps.app.goo.gl/mFsx3eJKZPWsZUPb8" target="_blank">Open Map</a></p>
+        <p><strong>Rocca a Mare Fortress:</strong> Koules or Rocca a Mare is a massive two-story fortress that surrounds the harbor, and it is one of the most emblematic landmarks of Heraklion. <a href="https://maps.app.goo.gl/Qwhr8PpfTxoCybQH6" target="_blank">Open Map</a></p> 
+        <p>As a tip, we encourage you to walk the hidden path behind the fortress in the evening, as the sun sets. It has amazing views of the old port and it is a very relaxing activity. Afterwards, you can return to the center for dinner or drinks!</p>
+        <p><strong>Heraklion Archaeological Museum:</strong> The Heraklion Archaeological Museum is one of the largest museums in Greece and the best in the world for Minoan art. <a href="https://maps.app.goo.gl/kdCtgKCdLHE6ThQZ9" target="_blank">Open Map</a></p> 
+        <p><strong>Historical Museum of Crete:</strong> <a href="https://maps.app.goo.gl/3LHWij2qign8he6o7" target="_blank">Open Map</a></p> 
+        <p><strong>Heraklion Natural History Museum:</strong> <a href="https://maps.app.goo.gl/ZWoPKJG3wcVXbYns9" target="_blank">Open Map</a></p> 
+        <p><strong>Saint Minas Cathedral:</strong> <a href="https://maps.app.goo.gl/1zQDiT36YabBSob17" target="_blank">Open Map</a></p> 
+        <p><strong>Saint Titus Cathedral:</strong> <a href="https://maps.app.goo.gl/6PHDXxU2n1mb8EfX8" target="_blank">Open Map</a></p> 
+        
+    </div>
+    
+    <button onclick="toggleVisibility('shops')">Shops nearby</button>
+    <div id="shops" class="content">
+        <p><strong>Chalkiadakis Super Market:</strong> (220meters from the house) <a href="https://maps.app.goo.gl/ojmeoZfpKHsRVRa27" target="_blank">Open Map</a></p>
+        <p><strong>Lidl Super Market:</strong> <a href="https://maps.app.goo.gl/Mvioj593diVqdUs77" target="_blank">Open Map</a></p>
+        <p><strong>Perasa (local fast food):</strong> <a href="https://maps.app.goo.gl/q8xVH2AEycKmkmQN6" target="_blank">Open Map</a></p>
+        <p><strong>Melba (crepes and ice cream ):</strong> <a href="https://maps.app.goo.gl/fcdnVVCSfbtitMcm8" target="_blank">Open Map</a></p>
+    </div>
+    
+    <button onclick="toggleVisibility('emergency')">Emergency Information</button>
+    <div id="emergency" class="content">
+        <p><strong>Local Emergency Numbers:</strong> Police Department: 100, Fire Department: 199, Ambulance: 166</p>
+        <p><strong>Nearest Hospital:</strong> Venizelio Hospital <a href="https://maps.app.goo.gl/dmcqPoWMivAs9s2U9" target="_blank">Open Map</a></p>
+        <p><strong>Biggest Hospital:</strong> Pagni University Hospital <a href="https://maps.app.goo.gl/6jNGEWkQ6m3WZ33c7" target="_blank">Open Map</a></p>
+        <p><strong>Circuit Breaker Location:</strong> On the main hallway of the house, by the front door.</p>
+    </div>
+</div>
+
+<script>
+function toggleVisibility(id) {
+    var content = document.getElementById(id);
+    if (content.style.display === "block") {
+        content.style.display = "none";
+    } else {
+        content.style.display = "block";
+    }
+}
+
+function toggleAllSections() {
+    var contents = document.querySelectorAll('.content');
+    var allVisible = Array.from(contents).every(content => content.style.display === "block");
+    contents.forEach(content => {
+        content.style.display = allVisible ? "none" : "block";
+    });
+}
+</script>
+
+</body>
+</html>
